@@ -1,21 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Pokedex</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<body>
-    <input type="text" placeholder="Enter Pokemon Name" class="inpt">
-    <button onclick="FetchPokemon();">Fetch Data</button>
-    <div class="pokeimg"></div>
-    <p class="para"></p>
+    <title>Pokedex</title>
+  </head>
+  <style>
+    .pokemon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .pokeinfo {
+      margin-top: 30px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      align-items: center;
+    }
+    .img {
+      width: 400px;
+      object-fit: fill;
+    }
+    .para {
+      font-size: 20px;
+    }
+    body {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+  </style>
+
+  <body style="display: flex; justify-content: center; flex-direction: column">
+    <div style="margin-bottom: 30px">
+      <img
+        style="width: 475px; object-fit: fill"
+        src="PokeScout-3-25-2024.png"
+      />
+    </div>
+    <div>
+      <input type="text" placeholder="Enter Pokemon Name" class="inpt" />
+      <button style="cursor: pointer" onclick="FetchPokemon();">
+        Fetch Data
+      </button>
+    </div>
+    <div class="pokeinfo">
+      <div class="pokemon">
+        <div class="pokeimg"></div>
+        <div class="pokename"></div>
+      </div>
+      <p class="para"></p>
+    </div>
     <script src="poke.js"></script>
-   
-  
-    
-    
-</body>
+  </body>
 </html>
