@@ -72,16 +72,30 @@ function getspecies(url) {
       }
     })
     .then((data) => {
+      var fact, shape;
       console.log(data); //Information about species as a JSON string
       const rand = Math.random() * 10; //calculate random number to select fact from fact list
-      const fact = data.flavor_text_entries[Math.round(rand)].flavor_text; //rounding up the number and fetching fact from array
+      try{
+      fact = data.flavor_text_entries[Math.round(rand)].flavor_text; 
+      }
+      catch(err)
+      {
+        fact = data.flavor_text_entries[0].flavor_text;
+        console.log(err);
+      }//rounding up the number and fetching fact from array
       funfact.innerHTML = `${fact}`; //updating fact paragraph
 
       //getting information for second column
       const growth = data.growth_rate.name;
       document.querySelector(".growth_rate").innerHTML = capitalize(growth);
 
-      const shape = data.shape.name;
+try{
+      shape = data.shape.name;
+}
+catch(err)
+{
+  shape="-";
+}
       document.querySelector(".shape").innerHTML = capitalize(shape);
     })
     .catch((error) => {
