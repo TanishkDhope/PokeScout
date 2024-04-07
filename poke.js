@@ -33,7 +33,7 @@ function FetchPokemon() {
 
       // get image of pokemon
       const sprite = `
-      <image class="img" src="${
+      <image class="img1" src="${
         data.sprites.other[`official-artwork`].front_default
       }"></image>`;
       ImageElement.innerHTML = sprite;
@@ -45,7 +45,9 @@ function FetchPokemon() {
       // get pokedex data
       GetInfo(data);
 
-      //get info-2
+      //get stats
+      GetStats(data);
+      
     })
     .catch((error) => {
       alert("Couldn't Find Pokemon, Try Again");

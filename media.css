@@ -1,0 +1,46 @@
+@media(max-width: 500px) 
+{
+    .body{
+        overflow-x: hidden;
+        justify-content: space-around;
+    } 
+    .logo{
+        width: 400px;
+    }
+    .Index{
+        display: none;
+    }
+    .content{
+        overflow-x: hidden;
+       width: 100vw;
+        align-items: center;
+        flex-direction: column;
+       
+    }
+    .Index{
+        display: none;
+    }
+    .info,
+    .info_2{
+        width: 100vw;
+        margin: 0;
+    }
+    
+    .pokeimg,
+    .img1{
+        height: 300px;
+        width: auto;
+    }
+    input[type="text"]:focus {
+        outline: none;
+        width: 250px;
+      }
+      .info_3
+      {
+        display: none;
+        margin: 0px;
+
+      }
+     
+    
+}

@@ -1,17 +1,18 @@
 .progress {
     border-radius: 15px;
     padding: 4px 10px 4px 10px;
+    width: 37.5em;
   }
   .base_stats {
     display: flex;
     flex-direction: column;
     gap: 9px;
     align-items: center;
-    width: 100%;
+    width: 758px;
     height: 100px;
     padding: 10px;
   }
-  .progress-bar {
+  .progcolour{
     height: 12px;
     padding-left: 10px;
     border-radius: 15px;
@@ -22,4 +23,9 @@
     gap: 10px;
     padding-bottom: 4px;
     border-bottom: 0.01em solid lightgrey;
+  }
+  .info_3{
+    margin-left: -40vw;
+    width: auto;
+    height: auto;
   }

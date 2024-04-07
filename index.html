@@ -22,6 +22,8 @@
 
     <!-- basestats css -->
     <link rel="stylesheet" href="basestats.css" />
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="media.css">
   </head>
   <style>
     input[type="text"] {
@@ -53,6 +55,7 @@
       display: flex;
     }
     body {
+      padding-bottom: 400px;
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -118,6 +121,12 @@
       box-shadow: 1px 1px 5px lightgray;
       border-radius: 5px;
     }
+    .logo{
+      width: 475px;
+    }
+    .img1{
+      height: 400px;
+    }
   </style>
 
   <body
@@ -130,7 +139,8 @@
   >
     <div style="margin-bottom: 30px">
       <img
-        style="width: 475px; object-fit: fill"
+      class="logo"
+        style="object-fit: fill"
         src="PokeScout-3-25-2024.png"
       />
     </div>
@@ -157,7 +167,8 @@
     <div class="content">
       <div class="pokeimg" style="">
         <img
-          style="width: auto; height: 400px; object-fit: fill"
+        class="img1"
+          style="width: auto; object-fit: fill"
           src="Images/charmander.png"
         />
       </div>
@@ -271,57 +282,59 @@
         </div>
       </div>
     </div>
-    <div class="info_2" style="width: 395px; margin-left: 60px">
-      <div>
+    <div class="info_3">
+      
         <h2 style="margin-left: 27px; font-family: fira sans">Base Stats</h2>
-        <div class="container">
+        
           <div class="base_stats">
             <div class="skills" id="HP">
-              <div style="width: 72px; text-align: end">HP</div>
-              <div style="width: 46px; text-align: center">58</div>
-              <div class="progress_bar">
-                <div class="progress" style="width: 600px; background-color: ">
+              <div style="width: 4.5em; text-align: end">HP</div>
+              <div class="hp" style="width: 46px; text-align: center">58</div>
+              <div class="progress" >
+                <div class="containerHP" style="width: 58%">
                   <div
-                    class="progress-bar"
+                    class="progcolour"
                     role="progressbar"
                     aria-valuenow="60"
                     aria-valuemin="0"
                     aria-valuemax="100"
-                    style="width: 58%; background-color: orange"
+                    style="width: 100%; background-color: orange"
                   ></div>
                 </div>
               </div>
             </div>
 
             <div class="skills" id="Attack">
-              <div style="width: 72px; text-align: end">Attack</div>
-              <div style="width: 46px; text-align: center">64</div>
-              <div class="progress_bar">
-                <div class="progress" style="width: 600px; background-color: ">
+              <div style="width: 4.5em; text-align: end">Attack</div>
+              <div class="Atk" style="width: 46px; text-align: center">64</div>
+
+              <div class="progress">
+                <div class="containerAtk" style="width: 64%">
                   <div
-                    class="progress-bar"
+                    class="progcolour"
                     role="progressbar"
                     aria-valuenow="40"
                     aria-valuemin="0"
                     aria-valuemax="100"
-                    style="width: 64%; background-color: #ffdd57"
+                    style="width: 100%; background-color: #ffdd57"
                   ></div>
                 </div>
               </div>
             </div>
 
             <div class="skills" id="Defense">
-              <div style="width: 72px; text-align: end">Defense</div>
-              <div style="width: 46px; text-align: center">58</div>
-              <div class="progress_bar">
-                <div class="progress" style="width: 600px">
+              <div style="width: 4.5em; text-align: end">Defense</div>
+              <div class="def" style="width: 46px; text-align: center">58</div>
+
+              <div class="progress" >
+                <div class="containerDef" style="width: 58%">
                   <div
-                    class="progress-bar"
+                    class="progcolour"
                     role="progressbar"
                     aria-valuenow="40"
                     aria-valuemin="0"
                     aria-valuemax="100"
-                    style="width: 58%; background-color: orange"
+                    style="width: 100%; background-color: orange"
                   ></div>
                 </div>
               </div>
@@ -329,16 +342,17 @@
 
             <div class="skills" id="SpAttack">
               <div style="width: 72px; text-align: end">Sp.Atk</div>
-              <div style="width: 46px; text-align: center">80</div>
-              <div class="progress_bar">
-                <div class="progress" style="width: 600px; background-color: ">
+              <div class="Sattk" style="width: 46px; text-align: center">80</div>
+
+              <div class="progress" >
+                <div class="containerSPatt" style="width: 80%">
                   <div
-                    class="progress-bar"
+                    class="progcolour"
                     role="progressbar"
                     aria-valuenow="40"
                     aria-valuemin="0"
                     aria-valuemax="100"
-                    style="width: 80%; background-color: #ffdd57"
+                    style="width: 100%; background-color: #ffdd57"
                   ></div>
                 </div>
               </div>
@@ -346,16 +360,17 @@
 
             <div class="skills" id="SpDefense">
               <div style="width: 72px; text-align: end">Sp.Defense</div>
-              <div style="width: 46px; text-align: center">65</div>
-              <div class="progress_bar">
-                <div class="progress" style="width: 600px; background-color: ">
+              <div class="Sdef"  style="width: 46px; text-align: center">65</div>
+
+              <div class="progress" >
+                <div class="containerSpDef" style="width: 65%">
                   <div
-                    class="progress-bar"
+                    class="progcolour"
                     role="progressbar"
                     aria-valuenow="40"
                     aria-valuemin="0"
                     aria-valuemax="100"
-                    style="width: 65%; background-color: #ffdd57"
+                    style="width: 100%; background-color: #ffdd57"
                   ></div>
                 </div>
               </div>
@@ -363,16 +378,17 @@
 
             <div class="skills" id="Speed" style="display: flex; gap: 10px">
               <div style="width: 72px; text-align: end">Speed</div>
-              <div style="width: 46px; text-align: center">80</div>
-              <div class="progress_bar">
-                <div class="progress" style="width: 600px; background-color: ">
+              <div class="spd"  style="width: 46px; text-align: center">80</div>
+
+              <div class="progress">
+                <div class="containerSpeed" style="width: 80%">
                   <div
-                    class="progress-bar"
+                    class="progcolour"
                     role="progressbar"
                     aria-valuenow="40"
                     aria-valuemin="0"
                     aria-valuemax="100"
-                    style="width: 80%; background-color: #ffdd57"
+                    style="width: 100%; background-color: #ffdd57"
                   ></div>
                 </div>
               </div>
@@ -383,8 +399,9 @@
               id="total"
               style="width: 758px; display: flex; gap: 10px; align-items: start"
             >
-              <div style="width: 72px; text-align: end">Total</div>
+              <div  style="width: 72px; text-align: end">Total</div>
               <div
+              class="ttl"
                 style="
                   width: 46px;
                   text-align: center;
@@ -396,11 +413,12 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        
+      
     </div>
 
     <script src="poke.js"></script>
     <script src="pokedex_data.js"></script>
+    <script src="stats.js"></script>
   </body>
 </html>

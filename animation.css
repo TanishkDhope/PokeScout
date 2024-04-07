@@ -1,0 +1,17 @@
+.progcolour{
+    animation: grow ease-in-out both;
+    animation-timeline: view();
+    animation-range-start: 0px;
+    animation-range-end: 300px;
+
+}
+@keyframes grow {
+    from{
+        opacity: 0;
+        width: 0%;
+    }
+    to{
+        opacity: 1;
+        width: 100%;
+    }    
+}

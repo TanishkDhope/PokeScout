@@ -23,6 +23,7 @@ function GetInfo(data) {
     const ability = capitalize(value.ability.name);
     abilityinfo.innerHTML += `<div style="margin-top: 5px">${ability}</div>`;
   });
+
   inputElement.value = "";
   const species_url = data.species.url;
   getspecies(species_url);
